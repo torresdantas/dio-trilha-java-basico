@@ -10,7 +10,7 @@ public class ContaTerminal {
         account.nomeCliente = sc.nextLine();
 
         System.out.print("informe o Número da sua conta: ");
-        account.numero = sc.nextInt();
+        account.numeroConta = sc.nextInt();
 
         System.out.print("Digite a Agência: ");
         account.agencia = sc.next();
@@ -18,6 +18,8 @@ public class ContaTerminal {
         System.out.print("Saldo: ");
         account.saldo = sc.nextDouble();
 
-        System.out.println(exibirDados);
+        System.out.println(account.exibirDados());
+
+        System.out.println("Atualizado");
     }
 }
